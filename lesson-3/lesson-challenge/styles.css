@@ -1,0 +1,26 @@
+.column:nth-child(even) {
+    .box:nth-child(odd) {
+        background-color: black;
+    }
+}
+
+.column:nth-child(odd) {
+    .box:nth-child(even) {
+        background-color: black;
+    }
+}
+.grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+}
+
+.box {
+    width: 30px;
+    height: 30px;
+}
+.column {
+    height: 200px;
+    width: 30px;
+}

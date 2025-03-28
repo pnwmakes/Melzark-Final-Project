@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(8, 50px); /* 8 columns */
+    grid-template-rows: repeat(8, 50px); /* 8 rows */
+    gap: 0;
+    border: 2px solid #333;
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+}
+
+.box:nth-child(16n + 1),
+.box:nth-child(16n + 3),
+.box:nth-child(16n + 5),
+.box:nth-child(16n + 7),
+.box:nth-child(16n + 10),
+.box:nth-child(16n + 12),
+.box:nth-child(16n + 14),
+.box:nth-child(16n + 16) {
+    background-color: black;
+}
+
+.box:not(:nth-child(16n + 1)):not(:nth-child(16n + 3)):not(
+        :nth-child(16n + 5)
+    ):not(:nth-child(16n + 7)):not(:nth-child(16n + 10)):not(
+        :nth-child(16n + 12)
+    ):not(:nth-child(16n + 14)):not(:nth-child(16n + 16)) {
+    background-color: white;
+}

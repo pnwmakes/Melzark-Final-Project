@@ -1,0 +1,12 @@
+body {
+    background-color: lightgrey;
+}
+h1 {
+    color: blue;
+    justify-content: center;
+    display: flex;
+}
+p {
+    font-size: 19px;
+    line-height: 1.5;
+}

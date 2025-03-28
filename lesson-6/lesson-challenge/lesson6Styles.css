@@ -1,0 +1,13 @@
+.linked-image:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.roman-list {
+    font-family: 'Georgia', serif;
+    padding-left: 30px;
+}
+
+.roman-list li {
+    padding: 5px 0;
+}
