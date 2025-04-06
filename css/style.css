@@ -40,9 +40,12 @@ header {
     font-weight: bold;
 }
 .hero {
-    background-color: #f5f5f5;
-    padding: 60px 20px;
+    background-image: url('../images/HGCfront.jpeg'); /* or your favorite image */
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
     text-align: center;
+    color: white;
 }
 
 .hero-content h2 {
@@ -179,4 +182,78 @@ header {
 .map {
     max-width: 500px;
     width: 100%;
+}
+.features {
+    background-color: #eafaea;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.features h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.feature-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.feature {
+    max-width: 300px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feature i {
+    color: #4caf50;
+    margin-bottom: 10px;
+}
+footer {
+    background-color: #ccf2cc;
+    padding: 30px 20px 10px;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.95rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.hours {
+    flex: 1;
+    min-width: 200px;
+}
+
+.hours h4 {
+    margin-bottom: 5px;
+    font-family: 'Playfair Display', serif;
+}
+
+.social a {
+    margin: 0 10px;
+    color: #000;
+    text-decoration: none;
+}
+
+.social a:hover {
+    color: #4caf50;
+}
+
+.footer-note {
+    margin-top: 20px;
+    font-size: 0.8rem;
+    color: #555;
 }
