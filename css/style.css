@@ -361,3 +361,8 @@ footer {
 .visit-btn:hover {
     background-color: #2f8e3b;
 }
+.required {
+    color: red;
+    margin-left: 4px;
+    font-weight: bold;
+}
