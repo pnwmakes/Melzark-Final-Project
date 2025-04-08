@@ -1,51 +1,46 @@
 # Melzark-Final-Project
 
-# Final Project
+# Hanson's Garden Center Website
 
-## Final Project Requirements
+This is the final project for the Victory Code HTML & CSS bootcamp. The project is a responsive, multi-page website for Hanson's Garden Center, a local garden shop located in Langley, WA.
 
-The final project focuses on implementing the skills learned during the bootcamp, including HTML, CSS, and deployment using Netlify.
-Minimum Requirements:
-Create a website using VS Code.
-Create a proper directory structure, including styles and images folders.
-Use best practices.
-Ensure everything is linked correctly: link tags, images, anchor tags, etc.
-Add your code to a repository on GitHub.com.
-Publish on Netlify.
-Place your final project URL on the Homework Sheet.
-Content
-Your project must include the following content elements:
-3 pages: Home, Contact, About.
-A header with a logo and navigation.
-Footer with social media icon links.
-A contact form connected to Netlify Forms.
-At least one image that is a link.
-A clickable email address that opens the user's default email app.
-Design
-Design guidelines to enhance the visual appeal and usability of your project:
-Create a wireframe.
-Use a consistent color scheme throughout the website.
-Create a logo.
-Embed a Google Map into your webpage.
-Include video and/or audio embeds.Create a website using VS Code.
-Create a proper directory structure, including styles and images folders.
-Use best practices.
-Ensure everything is linked correctly: link tags, images, anchor tags, etc.
-Add your code to a repository on GitHub.com.
-Publish on Netlify.
-Place your final project URL on the Homework Sheet.
-Content
-Your project must include the following content elements:
-3 pages: Home, Contact, About.
-A header with a logo and navigation.
-Footer with social media icon links.
-A contact form connected to Netlify Forms.
-At least one image that is a link.
-A clickable email address that opens the user's default email app.
-Design
-Design guidelines to enhance the visual appeal and usability of your project:
-Create a wireframe.
-Use a consistent color scheme throughout the website.
-Create a logo.
-Embed a Google Map into your webpage.
-Include video and/or audio embeds.
+## Live Site
+
+View the deployed website on Netlify:  
+https://friendly-cendol-3cc27a.netlify.app/
+
+## Built With
+
+-   HTML5
+-   CSS3
+-   Google Fonts
+-   Font Awesome
+-   Netlify (deployment and form handling)
+
+## Pages
+
+-   **Home** – Features a welcome section, a call-to-action button, and a responsive image gallery
+-   **About** – Tells the story of the garden center with photos and text
+-   **Contact** – Includes a Netlify-powered contact form, a map, email link, and store information
+-   **Thank You** – A custom page that appears after a successful contact form submission
+
+## Features
+
+-   Responsive layout for desktop and mobile
+-   Clickable image gallery
+-   Netlify contact form with a custom thank-you page
+-   Google Maps embed showing store location
+-   Email and social media links
+-   Store hours listed in footer on all pages
+
+## Deployment
+
+This project is hosted and deployed via Netlify. Form submissions are handled by Netlify Forms and are configured to send notifications to the store email address.
+
+## Credits
+
+All placeholder images used in this project were taken by the creator or provided by the client.
+
+## Acknowledgments
+
+Thanks to Victory Code, instructors, and peers for the support and feedback throughout the bootcamp.
