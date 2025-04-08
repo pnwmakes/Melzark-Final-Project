@@ -25,6 +25,10 @@ header {
     font-size: 1.5em;
     color: #333;
 }
+.nav-links {
+    display: flex;
+    gap: 32px;
+}
 
 .nav-links a {
     position: relative;
