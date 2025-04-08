@@ -7,7 +7,7 @@ This is the final project for the Victory Code HTML & CSS bootcamp. The project 
 ## Live Site
 
 View the deployed website on Netlify:  
-https://friendly-cendol-3cc27a.netlify.app/
+https://hansonsgardencenter.netlify.app
 
 ## Built With
 
