@@ -459,3 +459,46 @@ footer {
     font-size: 0.8rem;
     color: #555;
 }
+/* --------------------
+     RESPONSIVE STYLES
+-------------------- */
+@media (max-width: 768px) {
+    /* Nav Bar */
+    .nav-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    /* Hero Text */
+    .hero-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    /* Features Section */
+    .feature-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature {
+        width: 90%;
+        text-align: center;
+    }
+
+    /* Footer */
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
