@@ -1,6 +1,3 @@
-/* --------------------
-   GLOBAL STYLES
--------------------- */
 body {
     font-family: 'Lato', sans-serif;
     margin: 0;
@@ -14,9 +11,6 @@ body {
     font-weight: bold;
 }
 
-/* --------------------
-     HEADER & NAVIGATION
-  -------------------- */
 header {
     background-color: #ccf2cc;
     padding: 20px 0;
@@ -74,9 +68,6 @@ header {
     transform: scaleX(1);
 }
 
-/* --------------------
-     HOME PAGE
-  -------------------- */
 .hero {
     position: relative;
     background-image: url('../images/HGCfront.jpeg');
@@ -161,9 +152,6 @@ header {
     font-size: 2rem;
 }
 
-/* --------------------
-     ABOUT PAGE
-  -------------------- */
 .about-hero {
     background-color: #ccf2cc;
     text-align: center;
@@ -211,9 +199,6 @@ header {
     margin-bottom: 10px;
 }
 
-/* --------------------
-     CONTACT PAGE
-  -------------------- */
 .contact-hero {
     background-color: #ccf2cc;
     text-align: center;
@@ -273,9 +258,6 @@ header {
     width: 100%;
 }
 
-/* --------------------
-     THANK YOU PAGE
-  -------------------- */
 .thank-you-hero {
     background-image: url('../images/HGCfront.jpeg');
     background-size: cover;
@@ -316,9 +298,6 @@ header {
     font-family: 'Lato', sans-serif;
 }
 
-/* --------------------
-     RESOURCES PAGE
-  -------------------- */
 .resources-hero {
     background-color: #ccf2cc;
     text-align: center;
@@ -373,9 +352,6 @@ header {
     color: #4caf50;
 }
 
-/* --------------------
-     GALLERY SECTION
-  -------------------- */
 .gallery {
     background-color: #fff;
     padding: 60px 20px;
@@ -413,9 +389,6 @@ header {
     transform: scale(1.05);
 }
 
-/* --------------------
-     FOOTER
-  -------------------- */
 footer {
     background-color: #ccf2cc;
     padding: 30px 20px 10px;
@@ -459,9 +432,6 @@ footer {
     font-size: 0.8rem;
     color: #555;
 }
-/* --------------------
-     RESPONSIVE STYLES
--------------------- */
 @media (max-width: 768px) {
     .nav-container {
         flex-direction: column;
@@ -509,4 +479,9 @@ footer {
 
 .resource-links li {
     font-size: 0.95rem;
+}
+.video-grid iframe {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
 }
