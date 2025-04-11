@@ -463,7 +463,6 @@ footer {
      RESPONSIVE STYLES
 -------------------- */
 @media (max-width: 768px) {
-    /* Nav Bar */
     .nav-container {
         flex-direction: column;
         gap: 10px;
@@ -475,7 +474,6 @@ footer {
         gap: 10px;
     }
 
-    /* Hero Text */
     .hero-content h2 {
         font-size: 1.5rem;
     }
@@ -484,7 +482,6 @@ footer {
         font-size: 1rem;
     }
 
-    /* Features Section */
     .feature-grid {
         flex-direction: column;
         align-items: center;
@@ -495,10 +492,21 @@ footer {
         text-align: center;
     }
 
-    /* Footer */
     .footer-content {
         flex-direction: column;
         align-items: center;
         gap: 20px;
     }
+}
+.video-grid {
+    grid-template-columns: 1fr;
+    padding: 20px;
+}
+
+.link-section h3 {
+    font-size: 1.2rem;
+}
+
+.resource-links li {
+    font-size: 0.95rem;
 }
