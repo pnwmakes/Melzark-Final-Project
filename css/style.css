@@ -407,7 +407,6 @@ header {
 footer {
     background-color: #ccf2cc;
     padding: 30px 20px 10px;
-    text-align: center;
     margin-top: 40px;
     font-size: 0.95rem;
 }
@@ -415,16 +414,20 @@ footer {
 .footer-content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: flex-start;
     max-width: 1000px;
     margin: 0 auto;
     gap: 60px;
+    text-align: center;
+}
+
+.footer-content > div {
+    flex: 1 1 200px;
 }
 
 .hours,
 .store-info {
-    flex: 1;
     min-width: 200px;
 }
 
@@ -434,8 +437,14 @@ footer {
     font-family: 'Playfair Display', serif;
 }
 
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
 .social a {
-    margin: 0 10px;
     color: #000;
     text-decoration: none;
 }
@@ -450,42 +459,72 @@ footer {
     color: #555;
 }
 
-/* === Media Queries === */
+/* === Mobile Footer & Nav Adjustment === */
 @media (max-width: 768px) {
-    .nav-container,
-    .nav-links,
-    .feature-grid,
+    /* Nav stack for mobile */
+    .nav-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+        margin: 10px 0 0;
+    }
+
+    .nav-links li {
+        list-style: none;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 8px 0;
+    }
+
+    /* Footer adjustments */
     .footer-content {
         flex-direction: column;
         align-items: center;
-        gap: 20px;
-    }
-
-    .hero-content h2 {
-        font-size: 1.5rem;
-    }
-
-    .hero-content p {
-        font-size: 1rem;
-    }
-
-    .feature {
-        width: 90%;
         text-align: center;
+        gap: 10px;
     }
 
-    .video-grid {
-        grid-template-columns: 1fr;
-        padding: 20px;
+    .footer-content > div {
+        margin: 0;
+        padding: 5px 0;
     }
 
-    .link-section h3 {
-        font-size: 1.2rem;
+    .social {
+        margin-top: 5px;
     }
+}
 
-    .resource-links li {
-        font-size: 0.95rem;
-    }
+.hero-content h2 {
+    font-size: 1.5rem;
+}
+
+.hero-content p {
+    font-size: 1rem;
+}
+
+.feature {
+    width: 90%;
+    text-align: center;
+}
+
+.video-grid {
+    grid-template-columns: 1fr;
+    padding: 20px;
+}
+
+.link-section h3 {
+    font-size: 1.2rem;
+}
+
+.resource-links li {
+    font-size: 0.95rem;
 }
 
 @media (min-width: 1024px) {
