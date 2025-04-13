@@ -402,8 +402,7 @@ header {
 .gallery-grid a:hover {
     transform: scale(1.05);
 }
-
-/* === Footer === */
+/* footer section */
 footer {
     background-color: #ccf2cc;
     padding: 30px 20px 10px;
@@ -418,7 +417,7 @@ footer {
     align-items: flex-start;
     max-width: 1000px;
     margin: 0 auto;
-    gap: 60px;
+    gap: 40px;
     text-align: center;
 }
 
@@ -427,21 +426,16 @@ footer {
 }
 
 .hours,
-.store-info {
+.store-info,
+.social-info {
     min-width: 200px;
-}
-
-.hours h4,
-.store-info h4 {
-    margin-bottom: 5px;
-    font-family: 'Playfair Display', serif;
 }
 
 .social {
     display: flex;
     justify-content: center;
-    align-items: center;
     gap: 15px;
+    margin-top: 5px;
 }
 
 .social a {
@@ -456,7 +450,8 @@ footer {
 .footer-note {
     margin-top: 20px;
     font-size: 0.8rem;
-    color: #555;
+    text-align: center;
+    width: 100%;
 }
 
 /* === Mobile Footer & Nav Adjustment === */
