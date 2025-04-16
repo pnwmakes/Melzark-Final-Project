@@ -564,7 +564,7 @@ footer {
     }
 }
 
-/* Footer adjustments (keep these from your version) */
+/* Footer adjustments (keep these from your version)
 .footer-content {
     flex-direction: column;
     align-items: center;
@@ -575,6 +575,19 @@ footer {
 .footer-content > div {
     margin: 0;
     padding: 5px 0;
+} */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .footer-content > div {
+        margin: 0;
+        padding: 5px 0;
+    }
 }
 
 .social {
