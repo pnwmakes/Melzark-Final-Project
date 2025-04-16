@@ -269,6 +269,39 @@ header {
     max-width: 500px;
     width: 100%;
 }
+/* === Events Page === */
+.events-hero {
+    background-color: #ccf2cc;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.events-hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #2e7d32;
+}
+
+.events-hero .nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 15px;
+    padding: 0;
+    list-style: none;
+}
+
+/* .events-hero .nav-links a {
+    text-decoration: none;
+    color: #2e7d32;
+    font-weight: bold;
+    transition: color 0.3s ease;
+} */
+
+/* .events-hero .nav-links a:hover {
+    color: #4caf50;
+} */
 
 /* === Thank You Page === */
 .thank-you-hero {
