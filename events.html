@@ -20,12 +20,17 @@
     <body>
         <header>
             <div class="nav-container">
-                <img
-                    src="images/logo1.jpg"
-                    alt="Hanson's Garden Center Logo"
-                    class="logo-img"
-                />
-                <ul class="nav-links">
+                <a href="index.html">
+                    <img
+                        src="images/logo1.jpg"
+                        alt="Hanson's Garden Center logo"
+                        class="logo-img"
+                    />
+                </a>
+
+                <div class="hamburger" id="hamburger">&#9776;</div>
+
+                <ul class="nav-links" id="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
@@ -87,5 +92,13 @@
                 &copy; 2025 Hanson’s Garden Center. All rights reserved.
             </p>
         </footer>
+        <script>
+            const hamburger = document.getElementById('hamburger');
+            const navLinks = document.getElementById('nav-links');
+
+            hamburger.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        </script>
     </body>
 </html>
