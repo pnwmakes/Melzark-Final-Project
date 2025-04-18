@@ -31,7 +31,14 @@
                     />
                 </a>
 
-                <div class="hamburger" id="hamburger">&#9776;</div>
+                <div
+                    class="hamburger"
+                    id="hamburger"
+                    aria-label="Toggle menu"
+                    tabindex="0"
+                >
+                    &#9776;
+                </div>
 
                 <ul class="nav-links" id="nav-links">
                     <li><a href="index.html">Home</a></li>
@@ -53,6 +60,39 @@
                 <a href="index.html" class="visit-btn">Back to Home</a>
             </div>
         </section>
+        <footer>
+            <div class="footer-content">
+                <div class="hours">
+                    <h4>Store Hours</h4>
+                    <p>Mon–Sat: 8am – 5pm<br />Sun: 8am – 4pm</p>
+                </div>
+                <div class="store-info">
+                    <h4>Visit or Call Us</h4>
+                    <p>5844 Kramer Rd.<br />Langley, WA 98360</p>
+                    <p>Phone: <a href="tel:3603211008">360-321-1008</a></p>
+                </div>
+                <div class="social">
+                    <a
+                        href="https://www.facebook.com/hansonsgardencenter/"
+                        target="_blank"
+                    >
+                        <i class="fab fa-facebook fa-lg"></i>
+                    </a>
+                    <a
+                        href="https://www.instagram.com/hansonsgardencenter/"
+                        target="_blank"
+                    >
+                        <i class="fab fa-instagram fa-lg"></i>
+                    </a>
+                    <a href="mailto:hansonsgardencenter@gmail.com">
+                        <i class="fas fa-envelope fa-lg"></i>
+                    </a>
+                </div>
+            </div>
+            <p class="footer-note">
+                &copy; 2025 Hanson’s Garden Center. All rights reserved.
+            </p>
+        </footer>
         <script>
             const hamburger = document.getElementById('hamburger');
             const navLinks = document.getElementById('nav-links');
