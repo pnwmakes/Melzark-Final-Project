@@ -73,7 +73,10 @@ header {
 .nav-links a:hover::after {
     transform: scaleX(1);
 }
-
+.nav-links a i {
+    margin-right: 8px;
+    color: #2e7d32;
+}
 /* === Hero Section === */
 .hero {
     position: relative;
@@ -529,7 +532,6 @@ footer {
 
 /* Mobile Styles */
 @media (max-width: 768px) {
-    /* Hamburger visibility */
     .hamburger {
         display: block;
     }
@@ -545,6 +547,7 @@ footer {
         left: 0;
         padding: 20px 0;
         z-index: 999;
+        list-style: none;
     }
 
     .nav-links.active {
@@ -555,6 +558,7 @@ footer {
         width: 100%;
         text-align: center;
         padding: 10px 0;
+        list-style: none;
     }
 
     .nav-container {
@@ -564,7 +568,6 @@ footer {
         align-items: center;
     }
 
-    /* Footer stacking on mobile */
     .footer-content {
         flex-direction: column;
         align-items: center;
