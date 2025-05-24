@@ -57,6 +57,11 @@
             property="twitter:image"
             content="https://hansonsgardencenter.netlify.app/images/preview.png"
         />
+        <!-- Swiper CSS -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
     </head>
 
     <body>
@@ -109,13 +114,52 @@
             </div>
         </header>
 
-        <section class="hero">
+        <!-- <section class="hero">
             <div class="hero-content">
                 <h2>Welcome to Hanson's Garden Center</h2>
                 <p>Your source for plants, flowers, and garden supplies.</p>
                 <a href="contact.html" class="visit-btn">Visit Us</a>
             </div>
+        </section> -->
+        <section class="swiper hero-slider">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 with welcome message -->
+                <div class="swiper-slide">
+                    <img
+                        src="images/HGCfront.jpeg"
+                        alt="Hanson's Garden Center Front"
+                    />
+                    <div class="slide-caption">
+                        <h2>Welcome to Hanson's Garden Center</h2>
+                        <p>
+                            Your source for plants, flowers, and garden
+                            supplies.
+                        </p>
+                        <a href="contact.html" class="visit-btn">Visit Us</a>
+                    </div>
+                </div>
+
+                <!-- Other slides -->
+                <div class="swiper-slide">
+                    <img src="images/gallery2.jpg" alt="Potted Plants" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/gallery3.jpg" alt="Succulent Display" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/gallery4.jpg" alt="Inside Garden Center" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/gallery7.jpg" alt="Colorful Flower Pots" />
+                </div>
+            </div>
+
+            <!-- Navigation & Pagination -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
         </section>
+
         <section class="features">
             <h2>Why Choose Us?</h2>
             <div class="feature-grid">
@@ -143,8 +187,13 @@
             </div>
         </section>
         <section class="gallery">
-            <h2>Gallery</h2>
+            <h2>More From Around the Garden Center</h2>
+            <p class="gallery-intro">
+                Take a closer look at the plants, displays, and beautiful
+                moments from around our nursery and greenhouse.
+            </p>
             <div class="gallery-grid">
+                <!-- your existing images stay here -->
                 <a href="images/gallery2.jpg" target="_blank">
                     <img
                         src="images/gallery2.jpg"
@@ -173,6 +222,20 @@
                     />
                 </a>
             </div>
+            <p class="gallery-cta">
+                📸 See even more on
+                <a
+                    href="https://www.instagram.com/hansonsgardencenter/"
+                    target="_blank"
+                    >Instagram</a
+                >
+                and
+                <a
+                    href="https://www.facebook.com/hansonsgardencenter/"
+                    target="_blank"
+                    >Facebook</a
+                >!
+            </p>
         </section>
 
         <footer>
@@ -214,6 +277,34 @@
 
             hamburger.addEventListener('click', () => {
                 navLinks.classList.toggle('active');
+            });
+        </script>
+        <!-- Swiper JS -->
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <script>
+            const swiper = new Swiper('.hero-slider', {
+                loop: true,
+                effect: 'fade',
+                fadeEffect: {
+                    crossFade: true,
+                },
+                speed: 1000, // smooth transition duration (1 second)
+                loopAdditionalSlides: 3, // smoother infinite loop
+                autoplay: {
+                    delay: 4000,
+                    disableOnInteraction: false,
+                    pauseOnMouseEnter: true, // pause on hover
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
             });
         </script>
     </body>
