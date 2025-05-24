@@ -5,18 +5,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Upcoming Events | Hanson's Garden Center</title>
         <link rel="icon" type="image/x-icon" href="favicon.ico" />
-
         <link
             href="https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display&display=swap"
             rel="stylesheet"
         />
-
         <script
             src="https://kit.fontawesome.com/ba48fb1f12.js"
             crossorigin="anonymous"
         ></script>
         <link rel="stylesheet" href="css/style.css" />
     </head>
+
     <body>
         <header>
             <div class="nav-container">
@@ -27,7 +26,6 @@
                         class="logo-img"
                     />
                 </a>
-
                 <div
                     class="hamburger"
                     id="hamburger"
@@ -67,12 +65,44 @@
         </header>
 
         <main>
-            <section class="calendar-section">
-                <h2>Hanson’s Garden Center Calendar</h2>
+            <!-- Hero Banner -->
+            <section class="events-hero">
+                <h1>Upcoming Events at Hanson’s</h1>
                 <p>
-                    Stay up to date with our seasonal sales, free gardening
-                    classes, and special events—there’s always something
-                    blooming at Hanson’s!
+                    From free gardening classes to community BBQs—join us and
+                    grow something beautiful!
+                </p>
+            </section>
+
+            <!-- Featured Events -->
+            <section class="featured-events">
+                <h2><i class="fas fa-calendar-alt"></i> Featured Events</h2>
+                <ul class="event-list">
+                    <li>
+                        <strong>July 13:</strong> 🌻 Summer Veggie Workshop @
+                        10AM
+                    </li>
+                    <li>
+                        <strong>August 10:</strong> 🐝 Bee & Pollinator Class @
+                        10AM
+                    </li>
+                    <li>
+                        <strong>September 14:</strong> 🍁 Fall Planting Basics @
+                        10AM
+                    </li>
+                    <li>
+                        <strong>May 10 (2026):</strong> 🎉 Mother’s Day Weekend
+                        Anniversary Event
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Google Calendar Embed -->
+            <section class="calendar-section">
+                <h2>🗓 Full Events Calendar</h2>
+                <p>
+                    View upcoming sales, workshops, and classes all in one
+                    place:
                 </p>
                 <div class="calendar-container">
                     <iframe
@@ -100,28 +130,26 @@
                     <a
                         href="https://www.facebook.com/hansonsgardencenter/"
                         target="_blank"
-                    >
-                        <i class="fab fa-facebook fa-lg"></i>
-                    </a>
+                        ><i class="fab fa-facebook fa-lg"></i
+                    ></a>
                     <a
                         href="https://www.instagram.com/hansonsgardencenter/"
                         target="_blank"
-                    >
-                        <i class="fab fa-instagram fa-lg"></i>
-                    </a>
-                    <a href="mailto:hansonsgardencenter@gmail.com">
-                        <i class="fas fa-envelope fa-lg"></i>
-                    </a>
+                        ><i class="fab fa-instagram fa-lg"></i
+                    ></a>
+                    <a href="mailto:hansonsgardencenter@gmail.com"
+                        ><i class="fas fa-envelope fa-lg"></i
+                    ></a>
                 </div>
             </div>
             <p class="footer-note">
                 &copy; 2025 Hanson’s Garden Center. All rights reserved.
             </p>
         </footer>
+
         <script>
             const hamburger = document.getElementById('hamburger');
             const navLinks = document.getElementById('nav-links');
-
             hamburger.addEventListener('click', () => {
                 navLinks.classList.toggle('active');
             });
