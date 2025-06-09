@@ -260,8 +260,13 @@
             <div class="footer-content">
                 <div class="hours">
                     <h4>Store Hours</h4>
-                    <p>Mon–Sat: 8am – 5pm<br />Sun: 8am – 4pm</p>
+                    <p>
+                        Mon–Fri: 8am – 6pm<br />
+                        Sat: 8am – 5pm<br />
+                        Sun: 8am – 4pm
+                    </p>
                 </div>
+
                 <div class="store-info">
                     <h4>Visit or Call Us</h4>
                     <p>5844 Kramer Rd.<br />Langley, WA 98360</p>
@@ -297,7 +302,6 @@
                 navLinks.classList.toggle('active');
             });
 
-            // Enable keyboard toggle for accessibility
             hamburger.addEventListener('keydown', (e) => {
                 if (e.key === 'Enter' || e.key === ' ') {
                     navLinks.classList.toggle('active');
@@ -305,14 +309,12 @@
             });
         </script>
 
-        <!-- Swiper JS -->
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-        <!-- Your Swiper config -->
         <script>
             const swiper = new Swiper('.hero-slider', {
                 loop: true,
-                loopedSlides: 7, // 👈 match total number of real slides (not clones)
+                loopedSlides: 7, 
                 effect: 'fade',
                 fadeEffect: {
                     crossFade: true,
