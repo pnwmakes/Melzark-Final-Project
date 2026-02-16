@@ -767,46 +767,6 @@ footer {
 .gallery-cta a:hover {
     text-decoration: underline;
 }
-.plant-id-tool {
-    background-color: #eafaea;
-    text-align: center;
-    padding: 60px 20px;
-    margin-top: 40px;
-}
-
-.plant-id-tool h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #2e7d32;
-}
-
-.plant-id-tool p {
-    font-size: 1.1rem;
-    margin-bottom: 30px;
-    color: #333;
-}
-.plant-id-tool i {
-    margin-right: 10px;
-    color: #4caf50;
-    font-size: 1.5rem;
-    vertical-align: middle;
-}
-@keyframes growBounce {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.2);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-
-.plant-id-tool i:hover {
-    animation: growBounce 0.6s ease;
-}
 /* === Contact Section Enhancements === */
 .contact-content {
     display: flex;
@@ -880,24 +840,4 @@ footer {
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
     opacity: 1;
-}
-.plant-id-tool {
-    background-color: #eafaea;
-    padding: 60px 20px;
-    text-align: center;
-    margin-top: 40px;
-}
-
-.plant-id-tool h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #2e7d32;
-}
-
-.plant-id-tool p {
-    font-size: 1.1rem;
-    max-width: 700px;
-    margin: 0 auto 30px;
-    color: #444;
 }
