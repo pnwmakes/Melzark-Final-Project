@@ -1,0 +1,60 @@
+{
+    "heroSlides": [
+        {
+            "src": "images/HGCfront.jpeg",
+            "alt": "Hanson's Garden Center Front",
+            "caption": {
+                "title": "Welcome to Hanson's Garden Center",
+                "text": "Your source for plants, flowers, and garden supplies.",
+                "buttonText": "Visit Us",
+                "buttonHref": "contact.html"
+            }
+        },
+        {
+            "src": "images/gallery2.jpeg",
+            "alt": "Potted Plants"
+        },
+        {
+            "src": "images/gallery3.jpg",
+            "alt": "Succulent Display"
+        },
+        {
+            "src": "images/gallery4.jpg",
+            "alt": "Inside Garden Center"
+        },
+        {
+            "src": "images/gallery5.jpg",
+            "alt": "Outdoor Display"
+        },
+        {
+            "src": "images/gallery6.jpg",
+            "alt": "More Plants"
+        },
+        {
+            "src": "images/gallery7.jpg",
+            "alt": "Colorful Flower Pots"
+        }
+    ],
+    "galleryImages": [
+        {
+            "src": "images/gallery8.jpg",
+            "alt": "Potted plants on display"
+        },
+        {
+            "src": "images/gallery9.jpg",
+            "alt": "Succulent arrangement"
+        },
+        {
+            "src": "images/gallery10.jpg",
+            "alt": "Inside the garden center"
+        },
+        {
+            "src": "images/gallery11.jpg",
+            "alt": "Outdoor nursery area"
+        },
+        {
+            "src": "images/gallery12.jpg",
+            "alt": "Blooming flowers close-up"
+        }
+    ]
+}

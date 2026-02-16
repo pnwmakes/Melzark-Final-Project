@@ -35,6 +35,26 @@ https://hansonsgardencenter.netlify.app
 -   Store hours listed in the footer on all pages
 -   Responsive video grid on the Resources page
 -   Organized vendor and gardening resource links
+-   Centralized home-page image management using a single data file
+
+## Updating Home Page Images
+
+Home page slider and gallery images are now managed from one file:
+
+-   `data/images.json`
+
+To update photos:
+
+1. Add your new image file(s) into `images/`
+2. Open `data/images.json`
+3. Edit `heroSlides` for the top slider and/or `galleryImages` for the gallery
+4. Save and refresh the site
+
+Notes:
+
+-   Reordering images is done by moving items up/down in the JSON list
+-   Keep `alt` text descriptive for accessibility
+-   The first `heroSlides` item supports optional caption/button content
 
 ## Deployment
 

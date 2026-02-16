@@ -115,71 +115,7 @@
         </header>
 
         <section class="swiper hero-slider">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img
-                        src="images/HGCfront.jpeg"
-                        alt="Hanson's Garden Center Front"
-                    />
-                    <div class="slide-caption">
-                        <h2>Welcome to Hanson's Garden Center</h2>
-                        <p>
-                            Your source for plants, flowers, and garden
-                            supplies.
-                        </p>
-                        <a href="contact.html" class="visit-btn">Visit Us</a>
-                    </div>
-                </div>
-
-                <div class="swiper-slide">
-                    <img
-                        src="images/gallery2.jpeg"
-                        alt="Potted Plants"
-                        loading="lazy"
-                        decoding="async"
-                    />
-                </div>
-                <div class="swiper-slide">
-                    <img
-                        src="images/gallery3.jpg"
-                        alt="Succulent Display"
-                        loading="lazy"
-                        decoding="async"
-                    />
-                </div>
-                <div class="swiper-slide">
-                    <img
-                        src="images/gallery4.jpg"
-                        alt="Inside Garden Center"
-                        loading="lazy"
-                        decoding="async"
-                    />
-                </div>
-                <div class="swiper-slide">
-                    <img
-                        src="images/gallery5.jpg"
-                        alt="Outdoor Display"
-                        loading="lazy"
-                        decoding="async"
-                    />
-                </div>
-                <div class="swiper-slide">
-                    <img
-                        src="images/gallery6.jpg"
-                        alt="More Plants"
-                        loading="lazy"
-                        decoding="async"
-                    />
-                </div>
-                <div class="swiper-slide">
-                    <img
-                        src="images/gallery7.jpg"
-                        alt="Colorful Flower Pots"
-                        loading="lazy"
-                        decoding="async"
-                    />
-                </div>
-            </div>
+            <div class="swiper-wrapper" id="hero-slides"></div>
 
             <!-- Navigation & Pagination -->
             <div class="swiper-button-next"></div>
@@ -219,49 +155,7 @@
                 Take a closer look at the plants, displays, and beautiful
                 moments from around our nursery and greenhouse.
             </p>
-            <div class="gallery-grid">
-                <!-- your existing images stay here -->
-                <a href="images/gallery8.jpg" target="_blank">
-                    <img
-                        src="images/gallery8.jpg"
-                        alt="Potted plants on display"
-                        loading="lazy"
-                        decoding="async"
-                    />
-                </a>
-                <a href="images/gallery9.jpg" target="_blank">
-                    <img
-                        src="images/gallery9.jpg"
-                        alt="Succulent arrangement"
-                        loading="lazy"
-                        decoding="async"
-                    />
-                </a>
-                <a href="images/gallery10.jpg" target="_blank">
-                    <img
-                        src="images/gallery10.jpg"
-                        alt="Inside the garden center"
-                        loading="lazy"
-                        decoding="async"
-                    />
-                </a>
-                <a href="images/gallery11.jpg" target="_blank">
-                    <img
-                        src="images/gallery11.jpg"
-                        alt="Outdoor nursery area"
-                        loading="lazy"
-                        decoding="async"
-                    />
-                </a>
-                <a href="images/gallery12.jpg" target="_blank">
-                    <img
-                        src="images/gallery12.jpg"
-                        alt="Blooming flowers close-up"
-                        loading="lazy"
-                        decoding="async"
-                    />
-                </a>
-            </div>
+            <div class="gallery-grid" id="gallery-grid"></div>
             <p class="gallery-cta">
                 📸 See even more on
                 <a
@@ -332,30 +226,6 @@
         </script>
 
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-        <script>
-            const swiper = new Swiper('.hero-slider', {
-                loop: true,
-                loopedSlides: 7, 
-                effect: 'fade',
-                fadeEffect: {
-                    crossFade: true,
-                },
-                speed: 1000,
-                autoplay: {
-                    delay: 4000,
-                    disableOnInteraction: false,
-                    pauseOnMouseEnter: true,
-                },
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                },
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
-            });
-        </script>
+        <script type="module" src="js/images.js"></script>
     </body>
 </html>
