@@ -48,6 +48,7 @@ function createGalleryImage(image) {
     const linkEl = document.createElement('a');
     linkEl.href = image.src;
     linkEl.target = '_blank';
+    linkEl.rel = 'noopener noreferrer';
 
     const imageEl = document.createElement('img');
     imageEl.src = image.src;
@@ -112,6 +113,14 @@ async function initDynamicImages() {
         }
     } catch (error) {
         console.error('Image loader failed:', error);
+
+        heroContainer.innerHTML =
+            '<div class="swiper-slide"><img src="images/HGCfront.jpeg" alt="Hanson\'s Garden Center Front"></div>';
+
+        galleryContainer.innerHTML =
+            '<p class="gallery-intro">Photos are temporarily unavailable. Please refresh the page in a moment.</p>';
+
+        initSwiper(1);
     }
 }
 

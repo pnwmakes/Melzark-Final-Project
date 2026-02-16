@@ -134,12 +134,14 @@
                     <a
                         href="https://www.facebook.com/hansonsgardencenter/"
                         target="_blank"
+                        rel="noopener noreferrer"
                     >
                         <i class="fab fa-facebook fa-lg"></i>
                     </a>
                     <a
                         href="https://www.instagram.com/hansonsgardencenter/"
                         target="_blank"
+                        rel="noopener noreferrer"
                     >
                         <i class="fab fa-instagram fa-lg"></i>
                     </a>
@@ -158,6 +160,12 @@
 
             hamburger.addEventListener('click', () => {
                 navLinks.classList.toggle('active');
+            });
+
+            hamburger.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    navLinks.classList.toggle('active');
+                }
             });
         </script>
     </body>

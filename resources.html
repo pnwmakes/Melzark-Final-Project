@@ -110,37 +110,56 @@
                     <a
                         href="https://www.bloomingnursery.com/Scripts/default.asp"
                         target="_blank"
+                        rel="noopener noreferrer"
                         >Blooming Nursery</a
                     >
                 </li>
 
                 <li>
-                    <a href="https://cascadetropicals.com" target="_blank"
+                    <a
+                        href="https://cascadetropicals.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         >Cascade Tropicals</a
                     >
                 </li>
                 <li>
-                    <a href="https://www.monrovia.com" target="_blank"
+                    <a
+                        href="https://www.monrovia.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         >Monrovia</a
                     >
                 </li>
                 <li>
-                    <a href="https://www.tandlnursery.com" target="_blank"
+                    <a
+                        href="https://www.tandlnursery.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         >T&L Nursery</a
                     >
                 </li>
                 <li>
-                    <a href="https://vknursery.com" target="_blank"
+                    <a
+                        href="https://vknursery.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         >Van Klaveren's</a
                     >
                 </li>
                 <li>
-                    <a href="https://washingtonpottery.com" target="_blank"
+                    <a
+                        href="https://washingtonpottery.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         >Washington Pottery</a
                     >
                 </li>
                 <li>
-                    <a href="https://www.vanwingerden.com" target="_blank"
+                    <a
+                        href="https://www.vanwingerden.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         >Van Wingerden</a
                     >
                 </li>
@@ -148,6 +167,7 @@
                     <a
                         href="https://orders.pacificgrowersinc.com"
                         target="_blank"
+                        rel="noopener noreferrer"
                         >Pacific Growers</a
                     >
                 </li>
@@ -174,12 +194,14 @@
                     <a
                         href="https://www.facebook.com/hansonsgardencenter/"
                         target="_blank"
+                        rel="noopener noreferrer"
                     >
                         <i class="fab fa-facebook fa-lg"></i>
                     </a>
                     <a
                         href="https://www.instagram.com/hansonsgardencenter/"
                         target="_blank"
+                        rel="noopener noreferrer"
                     >
                         <i class="fab fa-instagram fa-lg"></i>
                     </a>
@@ -198,6 +220,12 @@
 
             hamburger.addEventListener('click', () => {
                 navLinks.classList.toggle('active');
+            });
+
+            hamburger.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    navLinks.classList.toggle('active');
+                }
             });
         </script>
     </body>
